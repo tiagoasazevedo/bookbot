@@ -8,3 +8,10 @@ def count_each_charater(file_contents): #function that will count each charater 
 	lower_contents = file_contents.lower() #lower each character so we don't have duplicates
 	character_counts = collections.Counter(lower_contents) #uses a collection to to count the character
 	return character_counts
+
+def sort_characters(character_counts): #function that will sort the characters
+	character_entries = [] #creates an empty dictionary to populate with the alphabetical characters
+	for char, count in character_counts.items(): #this will check if each character is an alphabetical character
+		if char.isalpha(): #checks if the character is alphabetical
+			character_entries.append(f"{char}: {count}") #appends alphabetical characters with its count
+	return	character_entries
