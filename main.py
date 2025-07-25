@@ -1,3 +1,5 @@
+import sys #this module will allow to run the script with any book, instead of being hardcoded
+
 def get_book_text(book): #function that will open and fetch the document contents
 	with open(book) as f: #opens the book and stores it temporarly in f
 		file_contents = f.read() #reads the content and stores in the new variable to be used later
