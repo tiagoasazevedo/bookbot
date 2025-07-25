@@ -19,7 +19,7 @@ def main(): #the funcion that will do the work to communicate the final results
 	character_counts = count_each_charater(book_content) #counts the sorted character and stores the value in a variable for later usage
 	character_entries = sort_characters(character_counts) #sorts the characters and stores the entries in a variable for later usage
 	print("============ BOOKBOT ============") #prints the intended header
-	print("Analyzing book") #prints the intended header
+	print(f"Analyzing book {sys.argv[1]}") #prints the intended header
 	print("----------- Word Count ----------") #prints the intended header
 	print(f"Found {num_words} total words") #prints the result with the desired message
 	print("--------- Character Count -------") #prints another header
